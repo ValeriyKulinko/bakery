@@ -1,0 +1,468 @@
+@import "../css/nullstyle.css";
+
+@font-face {
+  font-family: "Scriptina";
+  src: url("../fonts/scriptina.eot");
+  src: local("☺"), url("../fonts/scriptina.woff") format("woff"),
+    url("../fonts/scriptina.ttf") format("truetype"),
+    url("../fonts/scriptina.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Mark Simonson - Proxima Nova Regular.eot");
+  src: local("☺"),
+    url("../fonts/Mark Simonson - Proxima Nova Regular.woff") format("woff"),
+    url("../fonts/Mark Simonson - Proxima Nova Regular.ttf") format("truetype"),
+    url("../fonts/Mark Simonson - Proxima Nova Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: "Proxima Nova Light";
+  src: url("../fonts/Mark Simonson - Proxima Nova Light.eot");
+  src: local("☺"),
+    url("../fonts/Mark Simonson - Proxima Nova Light.woff") format("woff"),
+    url("../fonts/Mark Simonson - Proxima Nova Light.ttf") format("truetype"),
+    url("../fonts/Mark Simonson - Proxima Nova Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+/* ---------------------- */
+
+body {
+  display: grid;
+  justify-items: center;
+  background-color: #9e9c93;
+}
+#wrapper {
+  display: grid;
+  justify-items: stretch;
+  max-width: 1600px;
+}
+/* --------------------- */
+header {
+  display: grid;
+  position: relative;
+  z-index: 1;
+  background-image: url(../img/bgh.jpg);
+}
+.header-top {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  height: 70px;
+  background-color: rgba(86, 83, 76, 0.52);
+}
+.logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+.logo p {
+  font-family: "Scriptina";
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.nav-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+}
+ul.nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(9, 1fr);
+}
+.nav li {
+  display: grid;
+  justify-items: center;
+}
+.nav li,
+a {
+  font-family: Alegreya;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+.social-container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.social {
+  display: grid;
+  width: 105px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.social a {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  width: 939px;
+  height: 888px;
+  margin-top: -70px;
+  border-radius: 50%;
+  background-color: rgba(131, 79, 78, 0);
+  background-image: linear-gradient(
+    0deg,
+    #564f4c9f 0%,
+    rgba(86, 83, 76, 0) 101%
+  );
+}
+.header-content p1 {
+  text-align: center;
+  margin-top: 300px;
+  height: fit-content;
+  font-family: "Playfair Display";
+  font-size: 92px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-shadow: 0px 2px 0px #3d3029;
+  color: #ffffff;
+}
+.header-content p2 {
+  text-align: center;
+  height: fit-content;
+  margin-top: 20px;
+  font-family: "Proxima Nova Light";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 1px 0px #3d3029;
+  color: #ffffff;
+}
+.header-content button {
+  margin-bottom: 100px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #9e9c93;
+  background-color: rgba(29, 28, 26, 0.596);
+  font-family: Alegreya;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+/* ---------------------- */
+.box {
+  margin-top: -53px;
+  z-index: 4;
+  height: 106px;
+  display: grid;
+  justify-items: center;
+}
+.line {
+  margin-top: 48px;
+  z-index: 5;
+  height: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.87);
+}
+.cirle-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: -58px;
+  z-index: 6;
+  width: 106px;
+  height: 106px;
+  background-image: url(../img/circle_contaier.png);
+}
+.circle {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.87);
+  border-radius: 50%;
+}
+/* ---------------------- */
+main {
+  margin-top: -53px;
+  display: grid;
+  z-index: 1;
+}
+.b1 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 760px;
+  background-image: url(../img/bg2.jpg);
+}
+.chef-info {
+  display: grid;
+  justify-self: end;
+  align-self: start;
+  justify-items: center;
+  width: 490px;
+  margin-right: 70px;
+}
+.chef-info p1 {
+  margin-top: 100px;
+  font-family: Alegreya;
+  font-size: 48px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #56534c;
+}
+.chef-info p2 {
+  margin-top: 20px;
+  font-family: Alegreya;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a47d5e;
+}
+.chef-info p3 {
+  margin-top: 70px;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #56534c;
+  text-align: justify;
+}
+.chef-info p4 {
+  margin-top: 50px;
+  font-family: Alegreya;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #56534c;
+}
+.chef {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  gap: 20px;
+}
+.chef-foto {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 9px 0px rgba(0, 0, 0, 0.93);
+  border-radius: 50%;
+  background-image: url(../img/cheef.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benito,
+.gaspare {
+  display: grid;
+  justify-items: center;
+  align-self: center;
+  gap: 15px;
+}
+.chef hr {
+  width: 111px;
+  height: 1px;
+  background-color: #d7d5ca;
+}
+.chef .benito p5 {
+  font-family: Alegreya;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #56534c;
+}
+.chef .gaspare p6 {
+  font-family: Alegreya;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #56534c;
+}
+.chef-info span {
+  opacity: 0.5;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #56534c;
+}
+.open {
+  text-align: start;
+  justify-self: start;
+  margin-left: 40px;
+}
+.close {
+  text-align: end;
+  justify-self: end;
+  margin-right: 40px;
+}
+.chef-info p8 {
+  text-align: center;
+  font-family: Scriptina;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #a47d5e;
+}
+.cook-photos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 630px;
+  height: 540px;
+}
+.cook-photos div {
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.frame {
+  height: 238px;
+  width: 283px;
+  border: 5px solid #ffffff;
+}
+.flavour {
+  width: 295px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px #000000;
+  background-image: url(../img/flavor.png);
+}
+.egg {
+  width: 295px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px #000000;
+  background-image: url(../img/egg.png);
+}
+.cake {
+  width: 295px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px #000000;
+  background-image: url(../img/cake.png);
+}
+.strawberry {
+  width: 295px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 0px #000000;
+  background-image: url(../img/strawberry.png);
+}
+.b2 {
+  height: 760px;
+  display: grid;
+  background-image: url(../img/bg3.jpg);
+}
+.ready-in {
+  margin-left: 1135px;
+  z-index: 2;
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/ready_in_40min_back.png);
+  display: grid;
+  justify-items: center;
+  font-family: Alegreya;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.ready-in h1 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #a47d5e;
+}
+.ready-in h2 {
+  margin-top: 30px;
+  font-size: 92px;
+  color: #dfc691;
+}
+.ready-in h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  text-transform: none;
+  color: #979285;
+}
+.pancakes {
+  justify-self: center;
+  margin-top: -240px;
+  z-index: 1;
+  display: grid;
+  justify-items: end;
+  width: 965px;
+  height: 512px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/pancakes_bg.png);
+}
+.slider-box {
+  display: grid;
+  width: 568px;
+  height: 512px;
+  background-repeat: no-repeat;
+  background-image: url(../img/slider_box_bg.png);
+}
+.stripes{
+background-repeat: no-repeat;
+margin-top: 248px;
+margin-left: 20px;
+width: 9px;
+height: 16px;
+background-image: url(../img/3_stripes.png);
+}
+.mill {
+  justify-self: end;
+  align-self: end;
+  width: 261px;
+  height: 294px;
+  background-image: url(../img/mill.png);
+}
+.b3 {
+  height: 760px;
+  background-image: url(../img/bg4.jpg);
+}
+.b4 {
+  height: 920px;
+  background-color: #f3f1e9;
+  /* background-image: url(../img/bg5.jpg); */
+}
+/* ----------------------- */
+footer {
+  height: 240px;
+  background-color: #f3f1e9;
+  /* background-image: url(../img/bgf.jpg); */
+}
+
