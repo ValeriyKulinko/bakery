@@ -380,12 +380,8 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
-}
-
-.frame {
-  height: 238px;
-  width: 283px;
-  border: 5px solid #ffffff;
+  outline: 5px solid #ffffff;
+  outline-offset: -12px;
 }
 
 .flavour {
@@ -419,6 +415,7 @@ main {
   box-shadow: 0px 10px 10px 0px #000000;
   background-image: url(../img/strawberry.png);
 }
+
 
 .b3 {
   display: grid;
