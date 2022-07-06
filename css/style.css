@@ -70,7 +70,7 @@ body {
   justify-content: space-around;
 }
 
-ul.nav {
+.nav {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(9, 1fr);
@@ -82,7 +82,7 @@ ul.nav {
 }
 
 .nav li,
-a {
+.nav a {
   font-family: Alegreya;
   font-size: 14px;
   line-height: 24px;
@@ -120,6 +120,7 @@ a {
   position: relative;
   z-index: 1;
   background-image: url(../img/bgh.jpg);
+  background-repeat: no-repeat;
 }
 
 .b1-content {
@@ -193,7 +194,7 @@ a {
   height: 106px;
   display: grid;
   justify-items: center;
-  width: 100%;
+  width: 1600px;
 }
 
 .line {
@@ -235,6 +236,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   height: 760px;
   background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
 }
 
 .chef-info {
@@ -775,7 +777,102 @@ span {
 }
 
 /* ----------------------- */
-footer {
+.footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   height: 240px;
   background-color: #f3f1e9;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: 2fr 0.7fr 2fr;
+  align-items: center;
+  width: 1600px;
+}
+
+.footer_logo {
+  margin-bottom: 15px;
+  justify-self: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.footer_logo p {
+  font-family: Scriptina;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: #56534c;
+}
+
+.left,
+.right {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  width: 515px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.37);
+  box-shadow: 0px 0px 18px 15px rgba(0, 0, 0, 0.37);
+}
+
+.left {
+  justify-self: flex-end;
+}
+
+.right {
+  justify-self: flex-start;
+}
+
+.footer_menu {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 0.4fr 1fr 0.4fr 1fr;
+}
+
+.footer_menu li {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer_menu li,
+.footer_menu a {
+  font-family: Alegreya;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #56534c;
+}
+
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+
+.footer_lineup {
+  margin-bottom: 90px;
+  justify-self: center;
+  position: absolute;
+  z-index: 5;
+  width: 470px;
+  height: 1px;
+  background-color: #c2beba;
+}
+
+.footer_linedown {
+  margin-top: 90px;
+  justify-self: center;
+  position: absolute;
+  z-index: 5;
+  width: 470px;
+  height: 1px;
+  background-color: #c2beba;
 }
