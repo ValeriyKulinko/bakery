@@ -31,7 +31,6 @@ body {
 }
 
 .wrapper {
-  margin: 0 auto;
   display: grid;
   justify-items: stretch;
   width: 1600px;
