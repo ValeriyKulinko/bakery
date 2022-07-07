@@ -24,12 +24,14 @@
 /* ---------------------- */
 
 body {
+  overflow-x: hidden;
   display: grid;
   justify-items: center;
   background-color: #9e9c93;
 }
 
 .wrapper {
+  margin: 0 auto;
   display: grid;
   justify-items: stretch;
   width: 1600px;
